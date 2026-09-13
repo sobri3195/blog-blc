@@ -1,0 +1,1 @@
+<section class="container admin"><?php require __DIR__.'/_nav.php'?><h1>Halo, <?=e(user()['name'])?></h1><p>Kelola publikasi Brainy Journal dari panel ini.</p><div class="stats"><?php foreach($stats as $s):?><div><strong><?=$s['total']?></strong><span><?=e(ucfirst($s['status']))?></span></div><?php endforeach?></div></section>

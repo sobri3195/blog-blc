@@ -1,0 +1,1 @@
+<section class="empty page-head container"><p class="eyebrow">404</p><h1>Halaman tidak ditemukan</h1><p>Alamat mungkin berubah atau konten belum diterbitkan.</p><a class="button" href="/">Kembali ke beranda</a></section>
