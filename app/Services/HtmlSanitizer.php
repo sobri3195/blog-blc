@@ -1,0 +1,2 @@
+<?php namespace App\Services;
+final class HtmlSanitizer{public function clean(string $html):string{if(!class_exists('HTMLPurifier'))throw new \RuntimeException('HTMLPurifier belum terpasang. Jalankan composer install.');$c=\HTMLPurifier_Config::createDefault();$c->set('HTML.Allowed','p,br,h2,h3,h4,strong,em,ul,ol,li,blockquote,a[href|title|rel],table,thead,tbody,tr,th,td,img[src|alt|width|height]');$c->set('URI.DisableExternalResources',true);$c->set('Attr.EnableID',false);return (new \HTMLPurifier($c))->purify($html);}}
